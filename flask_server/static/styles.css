@@ -136,10 +136,6 @@ input[type='radio'] {
 }
 
 
-
-
-
-
 .chat-message ol {
   padding: 4px 16px;
 }
@@ -147,9 +143,9 @@ input[type='radio'] {
 .file-message {
   box-sizing: border-box;
   cursor: pointer;
-  background: #ec485b;
+  background: #ec485b !important;
   padding: .5em;
-  color: white;
+  color: white !important;
   box-shadow: 0 4px 6px -1px #0000002e, 0 2px 4px -2px #0000002e;
 }
 

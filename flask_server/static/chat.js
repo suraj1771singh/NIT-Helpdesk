@@ -46,7 +46,7 @@ function addMessage(message, msgtype) {
 
 function addPDFBtn(data) {
   const chatMessage = document.createElement("div");
-  chatMessage.classList.add("chat-message");
+  // chatMessage.classList.add("chat-message");
   chatMessage.classList.add(`incoming-message`);
   chatMessage.classList.add(`file-message`);
   chatMessage.innerText = data.filename;
@@ -54,7 +54,7 @@ function addPDFBtn(data) {
   chatMessage.onclick = (e) => {
     window.open(data.link);
   };
-  document.querySelector(".chat-messages").appendChild(chatMessage);
-  document.querySelector(".chat-messages").scrollTop += chatMessage.getBoundingClientRect().y + 10;
+  document.querySelector(".chat-app-middle").appendChild(chatMessage);
+  document.querySelector(".chat-app-middle").scrollTop += chatMessage.getBoundingClientRect().y + 10;
   chatInput.value = "";
 }

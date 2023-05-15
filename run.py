@@ -10,8 +10,8 @@ from nlp_utils import course_matcher
 # @app.before_first_request
 # def create_tables():
 #
-# with app.app_context():
-#     db.create_all()
+with app.app_context():
+    db.create_all()
 
 
 @app.post("/chatbot_api/")
